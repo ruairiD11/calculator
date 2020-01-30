@@ -6,6 +6,7 @@ public class Calculator {
 
     public Calculator() {}
 
+    //this method will add two numbers
     public int add(int firstNum, int secondNum) {
         int sum = firstNum + secondNum;
         return sum;
