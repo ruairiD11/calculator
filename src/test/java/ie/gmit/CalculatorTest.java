@@ -38,5 +38,9 @@ public class CalculatorTest {
 
     @DisplayName("Testing divide by 0 error")
     @Test
-    void testDivideByZero() { assertThrows(ArithmeticException.class, ()-> { myCalculator.divide(2,0); }); }
+    void testDivideByZero1() { assertThrows(ArithmeticException.class, ()-> { myCalculator.divide(2,0); }); }
+
+    @DisplayName("Testing divide by 0 error")
+    @Test
+    void testDivideByZero2() { assertThrows(ArithmeticException.class, ()-> { myCalculator.divide(0,2); }); }
 }
