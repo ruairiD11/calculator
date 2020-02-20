@@ -23,4 +23,20 @@ public class CalculatorTest {
     @DisplayName("Testing add method")
     @Test
     void testAdd() { assertEquals(2, myCalculator.add(1,1)); }
+
+    @DisplayName("Testing subtract method")
+    @Test
+    void testSubtract() { assertEquals(2, myCalculator.subtract(4,2)); }
+
+    @DisplayName("Testing multiply method")
+    @Test
+    void testMultiply() { assertEquals(10, myCalculator.multiply(2,5)); }
+
+    @DisplayName("Testing divide method")
+    @Test
+    void testDivide() { assertEquals(2, myCalculator.divide(4,2)); }
+
+    @DisplayName("Testing divide by 0 error")
+    @Test
+    void testDivideByZero() { assertThrows(ArithmeticException.class, ()-> { myCalculator.divide(2,0); }); }
 }

@@ -4,11 +4,24 @@ public class Calculator {
     private int firstNum;
     private int secondNum;
 
-    public Calculator() {}
+    public Calculator() {
+        this.firstNum = 0;
+        this.secondNum = 0;
+    }
 
-    //This method will add two numbers
     public int add(int firstNum, int secondNum) {
-
         return firstNum + secondNum;
+    }
+
+    public int subtract(int firstNum, int secondNum) {
+        return firstNum - secondNum;
+    }
+
+    public int multiply(int firstNum, int secondNum) {
+        return firstNum * secondNum;
+    }
+
+    public int divide(int firstNum, int secondNum) {
+        return firstNum / secondNum;
     }
 }
